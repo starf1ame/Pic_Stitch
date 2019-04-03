@@ -1,12 +1,14 @@
 import numpy as np
 import cv2
-from Optimize.changeSize import change_size
+from Optimize.resize import resize
 from Optimize.cropImg import handleImage
 from matplotlib import pyplot as plt
 import os
 
 def pic_sti(str_in1,str_in2,str_out):
-
+    
+    resize(str_in1,str_in2)
+    
     top, bot, left, right = 100, 100, 0, 500
 
     img_1 = cv2.imread(str_in1)
@@ -53,10 +55,12 @@ def pic_sti(str_in1,str_in2,str_out):
                        singlePointColor=(255, 0, 0),
                        matchesMask=matchesMask,
                        flags=0)
+    
     img3 = cv2.drawMatchesKnn(img_1, kp_1, img_2, kp_2, matches, None, **draw_params)
+    img3 = cv2.cvtColor(img3, cv2.COLOR_BGR2RGB)
     plt.imshow(img3, ), plt.show()
     target_path = os.path.abspath("..") + '/test/process/process.jpg'
-    plt.imsave(target_path, change_size(img3))
+    plt.imsave(target_path, img3)
 
     rows, cols = Img_1.shape[:2]
     MIN_MATCH_COUNT = 10
