@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'runPic1x2.ui'
-#
-# Created by: PyQt5 UI code generator 5.12.1
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtGui import QPalette, QPixmap, QColor
@@ -70,7 +64,7 @@ class Ui_Dialog(object):
         '''
         self.label_3 = QtWidgets.QLabel(Dialog)
         self.label_3.setGeometry(QtCore.QRect(510, 90, 210, 190))
-        self.label_3.setObjectName("label_2")
+        self.label_3.setObjectName("label_3")
 
         '''
         Button for choosing the left side picture file
@@ -114,17 +108,6 @@ class Ui_Dialog(object):
         self.chooseAlg.setObjectName("chooseAlgorithm")
         self.initAlg_box()
 
-        # '''
-        # ButtonBox for run the algorithm
-        # '''
-        # self.ifRun = QtWidgets.QDialogButtonBox(Dialog)
-        # self.ifRun.setGeometry(QtCore.QRect(510, 300, 165, 30))
-        # self.ifRun.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel| \
-        #                               QtWidgets.QDialogButtonBox.Ok)
-        # self.ifRun.setObjectName("ifRun")
-        # self.ifRun.accepted.connect(self.runStich)  # 确定
-        # self.ifRun.rejected.connect(self.close)  # 取消
-        #
         '''
         Button for run the algorithm
         '''
