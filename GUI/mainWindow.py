@@ -1,21 +1,8 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'test2.ui'
-#
-# Created by: PyQt5 UI code generator 5.12.1
-#
-# WARNING! All changes made in this file will be lost!
-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QMainWindow, QTextEdit, QAction, QApplication
-from PyQt5.QtGui import QIcon
-
 
 class Ui_MainWindow(object):
+    dir_list = ["up/down", "left/right"]
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(900, 550)
@@ -24,7 +11,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
 
         self.label = QtWidgets.QLabel(MainWindow)
-        self.label.setGeometry(QtCore.QRect(140, 60, 600, 240))
+        self.label.setGeometry(QtCore.QRect(140, 70, 600, 250))
         self.label.setObjectName("label")
 
 
@@ -37,6 +24,14 @@ class Ui_MainWindow(object):
         self.pushButton.setAutoRepeatDelay(200)
         self.pushButton.setObjectName("pushButton")
 
+        '''
+        Box for choosing up/down or left/right
+        '''
+        self.choose_1 = QtWidgets.QComboBox(MainWindow)
+        self.choose_1.setGeometry(QtCore.QRect(30, 480, 180, 30))
+        self.choose_1.setObjectName("chooseDir")
+        self.initDir_box(choose=self.choose_1)
+
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(240, 250, 180, 180))
         icon2 = QtGui.QIcon()
@@ -45,6 +40,14 @@ class Ui_MainWindow(object):
         self.pushButton_2.setIconSize(QtCore.QSize(175, 175))
         self.pushButton_2.setAutoRepeatDelay(200)
         self.pushButton_2.setObjectName("pushButton_2")
+
+        '''
+        Box for choosing up/down or left/right
+        '''
+        self.choose_2 = QtWidgets.QComboBox(MainWindow)
+        self.choose_2.setGeometry(QtCore.QRect(240, 480, 180, 30))
+        self.choose_2.setObjectName("chooseDir")
+        self.initDir_box(choose=self.choose_2)
 
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(450, 250, 180, 180))
@@ -79,5 +82,11 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", ""))
         self.pushButton_3.setText(_translate("MainWindow", ""))
         self.pushButton_4.setText(_translate("MainWindow", ""))
+
+    def initDir_box(self,choose):
+        choose.addItem("Choose a Direction")
+        choose.addItems(self.dir_list)
+
+
 
 
