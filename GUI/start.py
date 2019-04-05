@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from GUI import mainWindow, runPic1x2, runPic1x3, runPic2x2, runPic2x1, runPic3x1
+from PyQt5.QtWidgets import *
 import sys
 from PyQt5 import QtWidgets, uic,QtCore,QtGui
 from PyQt5.QtWidgets import QMainWindow, QTextEdit, QAction, QApplication
