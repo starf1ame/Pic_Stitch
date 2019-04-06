@@ -218,7 +218,7 @@ class Ui_Dialog(object):
             target_path_1 = os.path.abspath("..") + '/test/res_Pic/result_1.jpg'
             picStitchSIFT.pic_sti(self.targetFiles["medium"], \
                 self.targetFiles["right"], 'result_2.jpg')
-            target_path_2 = os.path.abspath("..") + '/test/res_Pic/2_result_2.jpg'
+            target_path_2 = os.path.abspath("..") + '/test/res_Pic/result_2.jpg'
             picStitchSIFT.pic_sti(target_path_1, target_path_2, 'result.jpg')
         elif (self.chooseAlg.currentIndex()==2):
             picStitchSURF.pic_sti(self.targetFiles["left"], \
