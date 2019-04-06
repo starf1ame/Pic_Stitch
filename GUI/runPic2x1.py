@@ -20,30 +20,33 @@ class Ui_Dialog(object):
     targetFiles = {}
     alg_default = "SIFT"
     alg_list = ["SIFT", "SURF"]
-    button_style = ''' 
-                    QPushButton
-                    {text-align : center;
-                    background-color : white;
-                    font: bold;
-                    border-color: gray;
-                    border-width: 2px;
-                    border-radius: 10px;
-                    padding: 6px;
-                    height : 14px;
-                    border-style: outset;
-                    font : 14px;}
-                    QPushButton:pressed
-                    {text-align : center;
-                    background-color : light gray;
-                    font: bold;
-                    border-color: gray;
-                    border-width: 2px;
-                    border-radius: 10px;
-                    padding: 6px;
-                    height : 14px;
-                    border-style: outset;
-                    font : 14px;}
-                    '''
+    button_style = ('''
+                       QPushButton
+                       {text-align : center;
+                       background-color : white;
+                       font: bold;
+                       border-color: gray;
+                       border-width: 2px;
+                       border-radius: 10px;
+                       padding: 6px;
+                       height : 14px;
+                       border-style: outset;
+                       min-width: 6em;
+                       font: 12px \"Microsoft YaHei\";}
+                       QPushButton:pressed
+                       {text-align : center;
+                       background-color : light gray;
+                       font: bold;
+                       border-color: gray;
+                       border-width: 2px;
+                       border-radius: 10px;
+                       padding: 6px;
+                       height : 14px;
+                       border-style: outset;
+                       min-width: 6em;
+                       font : 12px \"Microsoft YaHei\";}
+                       '''
+                    )
     showSwitch = 0 # 1 means showing result now
 
     def setupUi(self, Dialog):
