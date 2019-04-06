@@ -31,8 +31,8 @@ class Ui_Dialog(object):
                     padding: 6px;
                     height : 14px;
                     border-style: outset;
-                    min-width: 9em;
-                    font : 14px;}
+                    min-width: 7.5em;
+                    font: 12px \"Microsoft YaHei\";}
                     QPushButton:pressed
                     {text-align : center;
                     background-color : light gray;
@@ -43,15 +43,15 @@ class Ui_Dialog(object):
                     padding: 6px;
                     height : 14px;
                     border-style: outset;
-                    min-width: 9em;
-                    font : 14px;}
+                    min-width: 7.5em;
+                    font : 12px \"Microsoft YaHei\";}
                     '''
                     )
     showSwitch = 0 # 1 means showing result now
 
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1055, 750)
+        Dialog.resize(900, 650)
         self.initUI()
 
         '''
@@ -72,21 +72,21 @@ class Ui_Dialog(object):
         Label for the left-dowm side picture
         '''
         self.label_3 = QtWidgets.QLabel(Dialog)
-        self.label_3.setGeometry(QtCore.QRect(30, 400, 210, 190))
+        self.label_3.setGeometry(QtCore.QRect(30, 360, 210, 190))
         self.label_3.setObjectName("label_3")
         '''
         
         Label for the right-down side picture
         '''
         self.label_5 = QtWidgets.QLabel(Dialog)
-        self.label_5.setGeometry(QtCore.QRect(270, 400, 210, 190))
+        self.label_5.setGeometry(QtCore.QRect(270, 360, 210, 190))
         self.label_5.setObjectName("label_5")
 
         '''
         Button for choosing the left_up side picture file
         '''
         self.pushButton = QtWidgets.QPushButton(Dialog)
-        self.pushButton.setGeometry(QtCore.QRect(77, 300, 115, 35))
+        self.pushButton.setGeometry(QtCore.QRect(70, 300, 115, 35))
         self.pushButton.setObjectName("pushButton")
         self.pushButton.clicked.connect(self.left_up_pic)
         self.pushButton.setStyleSheet(self.button_style)
@@ -95,7 +95,7 @@ class Ui_Dialog(object):
         Button for choosing the right_up picture file
         '''
         self.pushButton_2 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_2.setGeometry(QtCore.QRect(317, 300, 115, 35))
+        self.pushButton_2.setGeometry(QtCore.QRect(310, 300, 115, 35))
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_2.clicked.connect(self.right_up_pic)
         self.pushButton_2.setStyleSheet(self.button_style)
@@ -104,7 +104,7 @@ class Ui_Dialog(object):
         Button for choosing the left_down side picture file
         '''
         self.pushButton_3 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_3.setGeometry(QtCore.QRect(77, 630, 115, 35))
+        self.pushButton_3.setGeometry(QtCore.QRect(70, 570, 115, 35))
         self.pushButton_3.setObjectName("pushButton_3")
         self.pushButton_3.clicked.connect(self.left_down_pic)
         self.pushButton_3.setStyleSheet(self.button_style)
@@ -113,7 +113,7 @@ class Ui_Dialog(object):
         Button for choosing the right_down side picture file
         '''
         self.pushButton_6 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_6.setGeometry(QtCore.QRect(317, 630, 115, 35))
+        self.pushButton_6.setGeometry(QtCore.QRect(310, 570, 115, 35))
         self.pushButton_6.setObjectName("pushButton_6")
         self.pushButton_6.clicked.connect(self.right_down_pic)
         self.pushButton_6.setStyleSheet(self.button_style)
@@ -122,7 +122,7 @@ class Ui_Dialog(object):
         Label for showing result
         '''
         self.label_4 = QtWidgets.QLabel(Dialog)
-        self.label_4.setGeometry(QtCore.QRect(550, 180, 270, 250))
+        self.label_4.setGeometry(QtCore.QRect(520, 140, 320, 270))
         self.label_4.setObjectName("label_4")
 
         '''
@@ -148,7 +148,7 @@ class Ui_Dialog(object):
         Button for run the algorithm
         '''
         self.pushButton_4 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_4.setGeometry(QtCore.QRect(550, 450, 115, 35))
+        self.pushButton_4.setGeometry(QtCore.QRect(530, 440, 115, 35))
         self.pushButton_4.setObjectName("pushButton_3")
         self.pushButton_4.setStyleSheet(self.button_style)
         self.pushButton_4.clicked.connect(self.runStich)
@@ -157,7 +157,7 @@ class Ui_Dialog(object):
         Button for showing result of program
         '''
         self.pushButton_5 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_5.setGeometry(QtCore.QRect(705, 450, 115, 35))
+        self.pushButton_5.setGeometry(QtCore.QRect(685, 440, 115, 35))
         self.pushButton_5.setObjectName("pushButton_4")
         self.pushButton_5.setStyleSheet(self.button_style)
         self.pushButton_5.clicked.connect(self.switch)
