@@ -145,13 +145,13 @@ class Ui_Dialog(object):
         self.pushButton_4.setText(_translate("Dialog", "Show Switch"))
         self.label_3.setText(_translate("Dialog", "show_process"))
 
-        pixmap = QPixmap("pic/c0.jpg")
+        pixmap = QPixmap("pic/c0_0.png")
         self.label.setScaledContents(True)
         self.label.setPixmap(pixmap)
-        pixmap = QPixmap("pic/c0.jpg")
+        pixmap = QPixmap("pic/c0_0.png")
         self.label_2.setScaledContents(True)
         self.label_2.setPixmap(pixmap)
-        pixmap = QPixmap("pic/c0.jpg")
+        pixmap = QPixmap("pic/c0_1.png")
         self.label_3.setScaledContents(True)
         self.label_3.setPixmap(pixmap)
 
