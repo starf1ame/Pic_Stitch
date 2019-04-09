@@ -11,7 +11,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
 
         self.label = QtWidgets.QLabel(MainWindow)
-        self.label.setGeometry(QtCore.QRect(140, 70, 600, 250))
+        self.label.setGeometry(QtCore.QRect(140, 70, 600, 230))
         self.label.setObjectName("label")
 
 
