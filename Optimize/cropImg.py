@@ -74,7 +74,7 @@ def handleImage(image):
     left = boundaryFinder(img, 0, width/2, xCheck)
     right = boundaryFinder(img, width-1, width/2, xCheck)
     top = boundaryFinder(img, 0, height/2, yCheck)
-    bottom = boundaryFinder(img, height-1, width/2, yCheck)
+    bottom = boundaryFinder(img, height-1, height/2, yCheck)
 
     rect = (left,top,right,bottom)
     # print(rect)
