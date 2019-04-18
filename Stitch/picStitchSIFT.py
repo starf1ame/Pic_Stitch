@@ -44,8 +44,10 @@ def pic_sti(str_in1,str_in2,str_out):
     pts2 = []
 
     # store all the good matches as per Lowe's ratio test.
+    DISTANCE_LIMIT = 0.7
+    
     for i, (m, n) in enumerate(matches):
-        if m.distance < 0.7 * n.distance:
+        if m.distance < DISTANCE_LIMIT * n.distance:
             good.append(m)
             pts2.append(kp_2[m.trainIdx].pt)
             pts1.append(kp_1[m.queryIdx].pt)
