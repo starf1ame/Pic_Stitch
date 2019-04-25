@@ -29,11 +29,13 @@ Just click run.exe
 ### 3.2 Use different modes of Pic_Stitch
 
 First, we come to Mainwindow like that:
+![image](https://github.com/YZ-WANG/Pic_Stitch/raw/master/image/1.png)
 
-Secondly, we can choose different modes, for example, run 1x2 stitch:
-
-Then, we choose target photos with algorithm and run stitching:
+Secondly, we can choose different modes, for example, run 1x2 stitch.Then, we choose target photos with algorithm and run stitching:
+![image](https://github.com/YZ-WANG/Pic_Stitch/raw/master/image/2.png)
 
 Fininally, we get the result we want:
-https://github.com/YZ-WANG/Pic_Stitch.git
+![image](https://github.com/YZ-WANG/Pic_Stitch/raw/master/image/3.png)
+
+show more test, like 2x2 stitch:
 ![image](https://github.com/YZ-WANG/Pic_Stitch/raw/master/image/4.png)
