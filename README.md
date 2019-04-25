@@ -16,11 +16,13 @@
 
 ### 3.1 start with Pic_Stitch
 
+Download: ```$ git clone https://github.com/YZ-WANG/Pic_Stitch.git```
+
 #### Method 1: Run from source code
 
-On terminal: $ python3 start.py
+On terminal: ```$ python3 start.py```
 
-On IDE: just run start.py
+On IDE: just run start.py. The path is ```./dist/start/start.exe```
 
 #### Method 2: Run exe
 
